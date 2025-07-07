@@ -27,7 +27,7 @@
     <script>
       function getModelFromURL() {
         const params = new URLSearchParams(window.location.search);
-        const allowedModels = ['Part1.glb', 'Part2.glb', 'Part3.glb']; // Add your models here
+        const allowedModels = ['Part1.glb', 'Part2', 'Part3.glb']; // Add your models here
         const requestedModel = params.get('model');
         const modelName = allowedModels.includes(requestedModel) ? requestedModel : 'Part1.glb';
         return `Parts/${modelName}`;
